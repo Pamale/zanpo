@@ -1,59 +1,166 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre de tu App - Presentación</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zanpo · Como en casa</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Nunito Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Nunito Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              orange: '#E8621A',
+              orangeLight: '#FCEFE9',
+              green: '#4A5D23', // Assuming a dark green from the logo/design system
+              surface: '#fff8f6',
+              surfaceDim: '#edd5cc',
+              text: '#333333',
+              textMuted: '#666666'
+            }
+          },
+          borderRadius: {
+            'xl': '1rem',
+            '2xl': '1.5rem',
+            '3xl': '2rem',
+            '4xl': '2.5rem',
+          },
+          boxShadow: {
+            'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+            'glass': '0 4px 30px rgba(0, 0, 0, 0.1)',
+          }
         }
-    </style>
+      }
+    }
+  </script>
+<!-- Custom Styles -->
+<style data-purpose="custom-utilities">
+    body {
+      background-color: theme('colors.brand.surface');
+      color: theme('colors.brand.text');
+    }
+    
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .phone-mockup {
+      border: 12px solid #1a1a1a;
+      border-radius: 3rem;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      position: relative;
+    }
+    
+    .phone-notch {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40%;
+      height: 24px;
+      background-color: #1a1a1a;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      z-index: 20;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 font-sans">
-
-    <!-- Hero Section -->
-    <header class="gradient-bg text-white py-20 px-6 text-center">
-        <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Tu App Innovadora</h1>
-        <p class="text-lg md:text-xl mb-8 opacity-90">La solución definitiva para gestionar tus proyectos con inteligencia.</p>
-        <div class="flex justify-center gap-4 flex-wrap">
-            <!-- Botón App Store -->
-            <a href="#" class="bg-black text-white px-8 py-3 rounded-lg font-bold flex items-center hover:scale-105 transition-transform">
-                <span class="mr-2"></span> App Store
-            </a>
-            <!-- Botón Play Store -->
-            <a href="#" class="bg-gray-800 text-white px-8 py-3 rounded-lg font-bold flex items-center hover:scale-105 transition-transform">
-                <span class="mr-2">▶</span> Google Play
-            </a>
-        </div>
-    </header>
-
-    <!-- Características -->
-    <section class="max-w-5xl mx-auto py-16 px-6">
-        <div class="grid md:grid-cols-3 gap-12 text-center">
-            <div>
-                <div class="text-4xl mb-4">🚀</div>
-                <h3 class="text-xl font-bold mb-2">Rápida</h3>
-                <p class="text-gray-600">Optimización de alto nivel para un rendimiento fluido.</p>
-            </div>
-            <div>
-                <div class="text-4xl mb-4">🤖</div>
-                <h3 class="text-xl font-bold mb-2">Inteligente</h3>
-                <p class="text-gray-600">Integración con las últimas tecnologías del mercado.</p>
-            </div>
-            <div>
-                <div class="text-4xl mb-4">🔒</div>
-                <h3 class="text-xl font-bold mb-2">Segura</h3>
-                <p class="text-gray-600">Tus datos están protegidos con los mejores estándares.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-8 text-center text-gray-500 border-t">
-        <p>&copy; 2026 Tu Empresa de Software. Todos los derechos reservados.</p>
-    </footer>
-
-</body>
-</html>
+<body class="min-h-screen flex flex-col font-sans overflow-x-hidden selection:bg-brand-orange selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="w-full py-6 px-8 lg:px-16 flex justify-between items-center bg-transparent relative z-50">
+<!-- Logo -->
+<a class="block w-40 h-auto" href="#">
+<img alt="Zanpo Logo" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugS_SqMYcwJQBmQHlVIe25LZrFoFF7bXDwQx_Uteopj2QkPXeSKP5aOtK27NqwzEFrmPdtnLczvtQfFRdDbD5uiRPgZoMdPT7sNd_LUgZWcGQGnmAADsEfF1lQpC2RBMmBeMZq7ZQ_WUed-lgM_SZicSA3Ttp03-mTC1ZwP_XCf6oqvUVaf53eucaU8zlQZjHFCNCJ_ZWTnGQhtIA65rqT6B3THFnU2_sq-NyzpRw4_Q7oJpt2ooFk_orCgESBl--lJjeR49Ejed3g"/>
+</a>
+<!-- CTA Button -->
+<a class="hidden md:inline-flex items-center justify-center px-8 py-3.5 text-sm font-bold text-white bg-brand-orange hover:bg-orange-700 transition-colors duration-300 rounded-full shadow-md hover:shadow-lg" href="#download">
+      Descargar la App
+    </a>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="flex-grow flex items-center justify-center px-8 lg:px-16 py-12">
+<div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+<!-- Left Content (Text & Cards) -->
+<section class="flex flex-col space-y-10 z-10" data-purpose="hero-content">
+<div class="space-y-6">
+<h1 class="text-5xl lg:text-6xl xl:text-7xl font-extrabold text-brand-text leading-[1.1] tracking-tight">
+            Suscripción mensual de tu <span class="text-brand-green">menú diario</span>
+</h1>
+<p class="text-xl text-brand-textMuted leading-relaxed max-w-xl">
+            Elige una suscripción o más para todos los días de la semana a tu gusto sin conformarte con un solo restaurante.
+          </p>
+</div>
+<!-- Options Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Delivery Card -->
+<div class="bg-white p-6 rounded-3xl shadow-soft border border-brand-surfaceDim flex flex-col items-start gap-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-2xl bg-brand-orangeLight text-brand-orange flex items-center justify-center text-xl">
+<i class="fa-solid fa-motorcycle"></i>
+</div>
+<div>
+<h3 class="font-bold text-lg text-brand-text">Pedidos a domicilio</h3>
+<p class="text-sm text-brand-textMuted mt-1">Recíbelo en casa o en la oficina</p>
+</div>
+</div>
+<!-- Pickup Card -->
+<div class="bg-white p-6 rounded-3xl shadow-soft border border-brand-surfaceDim flex flex-col items-start gap-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-2xl bg-[#f0f4ea] text-brand-green flex items-center justify-center text-xl">
+<i class="fa-solid fa-bag-shopping"></i>
+</div>
+<div>
+<h3 class="font-bold text-lg text-brand-text">Recoger en local</h3>
+<p class="text-sm text-brand-textMuted mt-1">Pasa a buscarlo sin esperas</p>
+</div>
+</div>
+</div>
+<!-- Primary CTA -->
+<div class="pt-4">
+<a class="inline-flex items-center justify-center px-10 py-4 text-lg font-bold text-white bg-brand-orange hover:bg-orange-700 transition-colors duration-300 rounded-full shadow-lg hover:shadow-xl w-full sm:w-auto" href="#download">
+            Descargar la App
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+</a>
+</div>
+</section>
+<!-- Right Content (Visual Mockup) -->
+<section class="relative w-full max-w-[500px] mx-auto lg:max-w-none flex justify-center items-center" data-purpose="hero-visual">
+<!-- Background Blob/Shape (Optional subtle background) -->
+<div class="absolute inset-0 bg-brand-orangeLight rounded-full blur-3xl opacity-50 -z-10 transform scale-110 translate-x-10 translate-y-10"></div>
+<!-- Phone Mockup Container -->
+<div class="relative w-full max-w-[320px] sm:max-w-[360px] aspect-[9/19]">
+<!-- Mockup Frame -->
+<div class="phone-mockup w-full h-full bg-white relative z-10">
+<div class="phone-notch"></div>
+<!-- App Screen Image -->
+<img alt="App Interface" class="w-full h-full object-cover rounded-[2rem]" src="https://lh3.googleusercontent.com/aida/ADBb0uiYotYbbcZ26VTMCbHGLcLp7hMKKand6JY423F1eTeG1J9WakNj1y7PAIMPrCAZdKZejy_zGOceoEK2ddVet0OzA7J4l6AeBtpvTbjlLcsJ_zC0BC_fDRXMe99uz7aGGviTaMUL70EkC7X3qCYSHWEcDBxdYMKfXpcnl8rBPKcFnTmO9RLbCDoj-LLAY4rxx6bepDLfY79Gu17dnnPNm0Y5bJz7XSOGKNR5lNrB7WXKrx2CTqvOfVVGj_c8SpkVJ5rkbD-u472BH9A"/>
+</div>
+<!-- Floating Glass Card -->
+<div class="absolute -left-12 sm:-left-24 top-1/2 transform -translate-y-1/2 z-20 w-64 glass-effect p-5 rounded-3xl shadow-glass">
+<div class="flex items-center gap-3 mb-3">
+<span class="bg-brand-orange text-white text-xs font-bold px-2 py-1 rounded-md uppercase tracking-wider">Menú del día</span>
+</div>
+<h4 class="font-bold text-gray-900 text-lg mb-1">Chef's Special</h4>
+<p class="text-sm text-gray-600 line-clamp-2">Salmón a la parrilla con guarnición de verduras de temporada y arroz basmati.</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- END: HeroSection -->
+</body></html>
