@@ -58,7 +58,6 @@
       -webkit-backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.5);
     }
-
     .phone-mockup {
       border: 12px solid #1a1a1a;
       border-radius: 3rem;
@@ -79,12 +78,10 @@
       border-bottom-right-radius: 12px;
       z-index: 20;
     }
-
     /* Cookie Banner Styles */
     .cookie-banner {
       animation: slideUp 0.3s ease-out;
     }
-
     @keyframes slideUp {
       from {
         transform: translateY(100%);
@@ -95,47 +92,42 @@
         opacity: 1;
       }
     }
-
     /* Footer Legal Styles */
     .footer-legal {
       border-top: 1px solid rgba(232, 98, 26, 0.1);
       background-color: #faf8f7;
     }
-
     .footer-link {
       transition: color 0.2s ease;
     }
-
     .footer-link:hover {
       color: theme('colors.brand.orange');
     }
   </style>
 </head>
 <body class="min-h-screen flex flex-col font-sans overflow-x-hidden selection:bg-brand-orange selection:text-white">
-
 <!-- BEGIN: Cookie Consent Banner -->
-<div id="cookie-banner" class="cookie-banner fixed bottom-0 left-0 right-0 z-40 bg-white border-t-2 border-brand-orange shadow-lg">
-  <div class="max-w-7xl mx-auto px-8 lg:px-16 py-4">
-    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-      <div class="flex-1">
-        <p class="text-sm text-brand-text font-medium">
+<div class="cookie-banner fixed bottom-0 left-0 right-0 z-40 bg-white border-t-2 border-brand-orange shadow-lg" id="cookie-banner">
+<div class="max-w-7xl mx-auto px-8 lg:px-16 py-4">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex-1">
+<p class="text-sm text-brand-text font-medium">
           Usamos cookies para mejorar tu experiencia. 
-          <a href="/politica-cookies.html" class="underline text-brand-orange hover:text-orange-700 font-semibold">Más información</a>
-        </p>
-      </div>
-      <div class="flex gap-3 w-full sm:w-auto">
-        <button id="reject-cookies" class="flex-1 sm:flex-none px-4 py-2 text-sm font-semibold text-brand-text border border-brand-surfaceDim rounded-lg hover:bg-gray-50 transition-colors">
+          <a class="underline text-brand-orange hover:text-orange-700 font-semibold" href="#">Más información</a>
+</p>
+</div>
+<div class="flex gap-3 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-4 py-2 text-sm font-semibold text-brand-text border border-brand-surfaceDim rounded-lg hover:bg-gray-50 transition-colors" id="reject-cookies">
           Rechazar
         </button>
-        <button id="accept-cookies" class="flex-1 sm:flex-none px-6 py-2 text-sm font-semibold text-white bg-brand-orange rounded-lg hover:bg-orange-700 transition-colors">
+<button class="flex-1 sm:flex-none px-6 py-2 text-sm font-semibold text-white bg-brand-orange rounded-lg hover:bg-orange-700 transition-colors" id="accept-cookies">
           Aceptar
         </button>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </div>
 <!-- END: Cookie Consent Banner -->
-
 <!-- BEGIN: MainHeader -->
 <header class="w-full py-6 bg-transparent relative z-50"><div class="max-w-7xl mx-auto px-8 lg:px-16 flex items-end w-full relative justify-center">
 <!-- Logo & Slogan -->
@@ -143,7 +135,7 @@
 <a class="block h-auto w-[24rem] md:w-[28rem]" href="/">
 <img alt="Zanpo Logo" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugS_SqMYcwJQBmQHlVIe25LZrFoFF7bXDwQx_Uteopj2QkPXeSKP5aOtK27NqwzEFrmPdtnLczvtQfFRdDbD5uiRPgZoMdPT7sNd_LUgZWcGQGnmAADsEfF1lQpC2RBMmBeMZq7ZQ_WUed-lgM_SZicSA3Ttp03-mTC1ZwP_XCf6oqvUVaf53eucaU8zlQZjHFCNCJ_ZWTnGQhtIA65rqT6B3THFnU2_sq-NyzpRw4_Q7oJpt2ooFk_orCgESBl--lJjeR49Ejed3g"/>
 </a>
-<span class="text-brand-green font-black uppercase block -mt-6 md:-mt-10 tracking-[0.2em] relative z-10 text-xl md:text-2xl" style="letter-spacing: 0.15em; text-align: center; width: 100%; display: inline-block;">como en casa</span>
+<span class="text-brand-green font-black uppercase block tracking-[0.2em] relative z-10 text-2xl md:text-4xl -mt-16 md:-mt-28" style="letter-spacing: 0.12em; text-align: center; width: 100%; display: inline-block;">como en casa</span>
 </div>
 <!-- CTA Button -->
 <a class="hidden md:inline-flex items-center justify-center px-8 py-3.5 text-sm font-bold text-white bg-brand-orange hover:bg-orange-700 transition-colors duration-300 rounded-full shadow-md hover:shadow-lg mb-2 md:absolute md:right-8 lg:right-16" href="#download">
@@ -151,7 +143,6 @@
   </a>
 </div></header>
 <!-- END: MainHeader -->
-
 <!-- BEGIN: HeroSection -->
 <main class="flex-grow flex items-center justify-center px-8 lg:px-16 py-12">
 <div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
@@ -217,89 +208,82 @@
 </div>
 </main>
 <!-- END: HeroSection -->
-
 <!-- BEGIN: Footer Legal -->
 <footer class="footer-legal w-full mt-20">
-  <div class="max-w-7xl mx-auto px-8 lg:px-16 py-12">
-    <!-- Main Footer Content -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-gray-300">
-      <!-- Column 1: Zanpo Info -->
-      <div>
-        <h4 class="font-bold text-brand-text mb-4 text-sm uppercase tracking-wide">Sobre Zanpo</h4>
-        <ul class="space-y-2 text-sm text-brand-textMuted">
-          <li><a href="/nosotros.html" class="footer-link hover:text-brand-orange">Quiénes somos</a></li>
-          <li><a href="/blog.html" class="footer-link hover:text-brand-orange">Blog</a></li>
-          <li><a href="/contacto.html" class="footer-link hover:text-brand-orange">Contacto</a></li>
-          <li><a href="/faq.html" class="footer-link hover:text-brand-orange">Preguntas frecuentes</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 2: Para Restaurantes -->
-      <div>
-        <h4 class="font-bold text-brand-text mb-4 text-sm uppercase tracking-wide">Para Restaurantes</h4>
-        <ul class="space-y-2 text-sm text-brand-textMuted">
-          <li><a href="/restaurantes.html" class="footer-link hover:text-brand-orange">¿Por qué Zanpo?</a></li>
-          <li><a href="/restaurantes.html#form" class="footer-link hover:text-brand-orange">Únete a la plataforma</a></li>
-          <li><a href="/terminos-restaurantes.html" class="footer-link hover:text-brand-orange">Términos para restaurantes</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 3: Seguridad & Soporte -->
-      <div>
-        <h4 class="font-bold text-brand-text mb-4 text-sm uppercase tracking-wide">Seguridad</h4>
-        <ul class="space-y-2 text-sm text-brand-textMuted">
-          <li><a href="/privacidad.html" class="footer-link hover:text-brand-orange">Política de Privacidad</a></li>
-          <li><a href="/seguridad.html" class="footer-link hover:text-brand-orange">Medidas de Seguridad</a></li>
-          <li><a href="https://ec.europa.eu/consumers/odr" target="_blank" class="footer-link hover:text-brand-orange">Resolver litigios (ODR)</a></li>
-          <li><a href="/accesibilidad.html" class="footer-link hover:text-brand-orange">Accesibilidad</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 4: Legal -->
-      <div>
-        <h4 class="font-bold text-brand-text mb-4 text-sm uppercase tracking-wide">Legal</h4>
-        <ul class="space-y-2 text-sm text-brand-textMuted">
-          <li><a href="/aviso-legal.html" class="footer-link hover:text-brand-orange">Aviso Legal</a></li>
-          <li><a href="/terminos-clientes.html" class="footer-link hover:text-brand-orange">Términos de Clientes</a></li>
-          <li><a href="/politica-cookies.html" class="footer-link hover:text-brand-orange">Política de Cookies</a></li>
-          <li><a href="/devoluciones.html" class="footer-link hover:text-brand-orange">Devoluciones</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Bottom Footer -->
-    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 text-xs text-brand-textMuted">
-      <div>
-        <p class="font-semibold text-brand-text mb-1">Zanpo · Como en casa</p>
-        <p>© 2026 Todos los derechos reservados</p>
-        <p class="mt-2">
+<div class="max-w-7xl mx-auto px-8 lg:px-16 py-12">
+<!-- Main Footer Content -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-gray-300">
+<!-- Column 1: Zanpo Info -->
+<div>
+<h4 class="font-bold text-brand-text mb-4 text-sm uppercase tracking-wide">Sobre Zanpo</h4>
+<ul class="space-y-2 text-sm text-brand-textMuted">
+<li><a class="footer-link hover:text-brand-orange" href="#">Quiénes somos</a></li>
+<li><a class="footer-link hover:text-brand-orange" href="#">Blog</a></li>
+<li><a class="footer-link hover:text-brand-orange" href="#">Contacto</a></li>
+<li><a class="footer-link hover:text-brand-orange" href="#">Preguntas frecuentes</a></li>
+</ul>
+</div>
+<!-- Column 2: Para Restaurantes -->
+<div>
+<h4 class="font-bold text-brand-text mb-4 text-sm uppercase tracking-wide">Para Restaurantes</h4>
+<ul class="space-y-2 text-sm text-brand-textMuted">
+<li><a class="footer-link hover:text-brand-orange" href="#">¿Por qué Zanpo?</a></li>
+<li><a class="footer-link hover:text-brand-orange" href="#">Únete a la plataforma</a></li>
+<li><a class="footer-link hover:text-brand-orange" href="#">Términos para restaurantes</a></li>
+</ul>
+</div>
+<!-- Column 3: Seguridad & Soporte -->
+<div>
+<h4 class="font-bold text-brand-text mb-4 text-sm uppercase tracking-wide">Security</h4>
+<ul class="space-y-2 text-sm text-brand-textMuted">
+<li><a class="footer-link hover:text-brand-orange" href="#">Política de Privacidad</a></li>
+<li><a class="footer-link hover:text-brand-orange" href="#">Medidas de Seguridad</a></li>
+<li><a class="footer-link hover:text-brand-orange" href="https://ec.europa.eu/consumers/odr" target="_blank">Resolver litigios (ODR)</a></li>
+<li><a class="footer-link hover:text-brand-orange" href="#">Accesibilidad</a></li>
+</ul>
+</div>
+<!-- Column 4: Legal -->
+<div>
+<h4 class="font-bold text-brand-text mb-4 text-sm uppercase tracking-wide">Legal</h4>
+<ul class="space-y-2 text-sm text-brand-textMuted">
+<li><a class="footer-link hover:text-brand-orange" href="#">Aviso Legal</a></li>
+<li><a class="footer-link hover:text-brand-orange" href="#">Términos de Clientes</a></li>
+<li><a class="footer-link hover:text-brand-orange" href="#">Política de Cookies</a></li>
+<li><a class="footer-link hover:text-brand-orange" href="#">Devoluciones</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Footer -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 text-xs text-brand-textMuted">
+<div>
+<p class="font-semibold text-brand-text mb-1">Zanpo · Como en casa</p>
+<p>© 2026 Todos los derechos reservados</p>
+<p class="mt-2">
           CIF: [COMPLETAR] | Domicilio: [COMPLETAR], Algeciras (Cádiz)<br/>
-          Email: <a href="mailto:hola@zanpo.app" class="text-brand-orange hover:underline">hola@zanpo.app</a>
-        </p>
-      </div>
-      <div class="flex gap-6">
-        <a href="#" class="hover:text-brand-orange transition-colors" title="Instagram">
-          <i class="fa-brands fa-instagram text-lg"></i>
-        </a>
-        <a href="#" class="hover:text-brand-orange transition-colors" title="TikTok">
-          <i class="fa-brands fa-tiktok text-lg"></i>
-        </a>
-        <a href="#" class="hover:text-brand-orange transition-colors" title="Twitter">
-          <i class="fa-brands fa-twitter text-lg"></i>
-        </a>
-      </div>
-    </div>
-  </div>
+          Email: <a class="text-brand-orange hover:underline" href="mailto:hola@zanpo.app">hola@zanpo.app</a>
+</p>
+</div>
+<div class="flex gap-6">
+<a class="hover:text-brand-orange transition-colors" href="#" title="Instagram">
+<i class="fa-brands fa-instagram text-lg"></i>
+</a>
+<a class="hover:text-brand-orange transition-colors" href="#" title="TikTok">
+<i class="fa-brands fa-tiktok text-lg"></i>
+</a>
+<a class="hover:text-brand-orange transition-colors" href="#" title="Twitter">
+<i class="fa-brands fa-twitter text-lg"></i>
+</a>
+</div>
+</div>
+</div>
 </footer>
 <!-- END: Footer Legal -->
-
 <!-- JavaScript: Cookie Management -->
 <script>
   // Cookie banner logic
   const cookieBanner = document.getElementById('cookie-banner');
   const acceptBtn = document.getElementById('accept-cookies');
   const rejectBtn = document.getElementById('reject-cookies');
-
   // Check if user has already made a choice
   function checkCookieConsent() {
     const consent = localStorage.getItem('zanpo-cookie-consent');
@@ -307,32 +291,20 @@
       cookieBanner.style.display = 'none';
     }
   }
-
   // Accept cookies
   acceptBtn.addEventListener('click', function() {
     localStorage.setItem('zanpo-cookie-consent', 'accepted');
     cookieBanner.style.display = 'none';
     // Aquí irían los scripts de analytics (Google Analytics, etc.)
     console.log('Cookies aceptadas. Iniciando scripts de tracking...');
-    loadAnalytics();
   });
-
   // Reject cookies
   rejectBtn.addEventListener('click', function() {
     localStorage.setItem('zanpo-cookie-consent', 'rejected');
     cookieBanner.style.display = 'none';
     console.log('Cookies rechazadas.');
   });
-
-  // Load analytics only if consent given
-  function loadAnalytics() {
-    // Aquí irá Google Analytics u otros scripts
-    // window.dataLayer = window.dataLayer || [];
-    // etc.
-  }
-
   // Check on page load
   document.addEventListener('DOMContentLoaded', checkCookieConsent);
 </script>
-
 </body></html>
