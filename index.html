@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-
-<html lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Zanpo · Como en casa</title>
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <!-- Google Fonts: Nunito Sans -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;display=swap" rel="stylesheet">
 <!-- FontAwesome for Icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <!-- Tailwind Configuration -->
 <script>
     tailwind.config = {
@@ -129,28 +127,32 @@
 </div>
 <!-- END: Cookie Consent Banner -->
 <!-- BEGIN: MainHeader -->
-<header class="w-full py-6 bg-transparent relative z-50"><div class="max-w-7xl mx-auto px-8 lg:px-16 flex items-end w-full relative justify-center">
+<header class="w-full bg-transparent relative z-50 pt-10 pb-2"><div class="max-w-7xl mx-auto px-8 lg:px-16 flex items-end w-full relative justify-center">
 <!-- Logo & Slogan -->
-<div class="flex flex-col w-[24rem] md:w-[28rem] items-center relative">
-<a class="block h-auto w-[24rem] md:w-[28rem]" href="/">
-<img alt="Zanpo Logo" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugS_SqMYcwJQBmQHlVIe25LZrFoFF7bXDwQx_Uteopj2QkPXeSKP5aOtK27NqwzEFrmPdtnLczvtQfFRdDbD5uiRPgZoMdPT7sNd_LUgZWcGQGnmAADsEfF1lQpC2RBMmBeMZq7ZQ_WUed-lgM_SZicSA3Ttp03-mTC1ZwP_XCf6oqvUVaf53eucaU8zlQZjHFCNCJ_ZWTnGQhtIA65rqT6B3THFnU2_sq-NyzpRw4_Q7oJpt2ooFk_orCgESBl--lJjeR49Ejed3g"/>
-</a>
-<span class="text-brand-green font-black uppercase block tracking-[0.2em] relative z-10 text-2xl md:text-4xl -mt-16 md:-mt-28" style="letter-spacing: 0.12em; text-align: center; width: 100%; display: inline-block;">como en casa</span>
+<div class="w-full flex flex-col items-center text-center">
+<a class="block" href="/"><img alt="Zanpo" class="w-64 md:w-80 h-auto mx-auto" src="./assets/img/logo-sharp.png"></a>
+<span class="text-brand-green font-black uppercase block text-2xl md:text-4xl mt-1" style="letter-spacing:0.14em;">como en casa</span>
+<div class="relative w-full max-w-6xl mt-6 mb-12">
+<img alt="Comida casera en la mesa" class="w-full h-48 md:h-64 object-cover rounded-3xl" src="./assets/img/header-food.jpg" style="-webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent); mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent); object-position: center center;">
+<div class="absolute inset-x-0 -bottom-9 flex flex-wrap justify-center gap-2 md:gap-3 px-4">
+<div class="bg-white/95 backdrop-blur rounded-2xl shadow-xl px-5 py-3.5 md:px-7 md:py-4 flex items-center gap-3 border-2 border-orange-100"><span class="text-2xl md:text-3xl">🍲</span><span class="text-base md:text-lg font-extrabold text-gray-800">Olvídate de cocinar</span></div>
+<div class="bg-white/95 backdrop-blur rounded-2xl shadow-xl px-5 py-3.5 md:px-7 md:py-4 flex items-center gap-3 border-2 border-orange-100"><span class="text-2xl md:text-3xl">🥗</span><span class="text-base md:text-lg font-extrabold text-gray-800">Come sano y casero</span></div>
+<div class="bg-white/95 backdrop-blur rounded-2xl shadow-xl px-5 py-3.5 md:px-7 md:py-4 flex items-center gap-3 border-2 border-orange-100"><span class="text-2xl md:text-3xl">💰</span><span class="text-base md:text-lg font-extrabold text-gray-800">Ahorra en compras</span></div>
+<div class="bg-white/95 backdrop-blur rounded-2xl shadow-xl px-5 py-3.5 md:px-7 md:py-4 flex items-center gap-3 border-2 border-orange-100"><span class="text-2xl md:text-3xl">🍽️</span><span class="text-base md:text-lg font-extrabold text-gray-800">Elige qué comer cada día</span></div>
+<div class="bg-white/95 backdrop-blur rounded-2xl shadow-xl px-5 py-3.5 md:px-7 md:py-4 flex items-center gap-3 border-2 border-orange-100"><span class="text-2xl md:text-3xl">⏰</span><span class="text-base md:text-lg font-extrabold text-gray-800">Tu comida, a tu hora</span></div>
 </div>
-<!-- CTA Button -->
-<a class="hidden md:inline-flex items-center justify-center px-8 py-3.5 text-sm font-bold text-white bg-brand-orange hover:bg-orange-700 transition-colors duration-300 rounded-full shadow-md hover:shadow-lg mb-2 md:absolute md:right-8 lg:right-16" href="#download">
-    Descargar la App
-  </a>
+</div>
+</div>
 </div></header>
 <!-- END: MainHeader -->
 <!-- BEGIN: HeroSection -->
-<main class="flex-grow flex items-center justify-center px-8 lg:px-16 py-12">
+<main class="flex-grow flex items-center justify-center px-8 lg:px-16 py-4">
 <div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 <!-- Left Content (Text & Cards) -->
 <section class="flex flex-col space-y-10 z-10" data-purpose="hero-content">
 <div class="space-y-6">
-<h1 class="text-5xl lg:text-6xl xl:text-7xl font-extrabold text-brand-text leading-[1.1] tracking-tight">
-            Suscripción mensual de tu <span class="text-brand-green">menú diario</span>
+<h1 class="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-brand-text leading-[1.15] tracking-tight text-balance">
+            Suscripción mensual de <span class="text-brand-green">platos</span> en restaurantes de tu zona
 </h1>
 <p class="text-xl text-brand-textMuted leading-relaxed max-w-xl">
             Elige una suscripción o más para todos los días de la semana a tu gusto sin conformarte con un solo restaurante.
@@ -179,6 +181,20 @@
 </div>
 </div>
 </div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
+<div class="flex items-center gap-3 bg-white rounded-2xl border border-orange-100 shadow-sm px-4 py-3">
+<div class="w-11 h-11 shrink-0 rounded-full bg-orange-100 flex items-center justify-center text-xl">📅</div>
+<div><p class="font-bold text-sm text-brand-text leading-tight">Elige días y hora</p><p class="text-xs text-brand-textMuted mt-0.5">Tú marcas el horario</p></div>
+</div>
+<div class="flex items-center gap-3 bg-white rounded-2xl border border-orange-100 shadow-sm px-4 py-3">
+<div class="w-11 h-11 shrink-0 rounded-full bg-orange-100 flex items-center justify-center text-xl">💶</div>
+<div><p class="font-bold text-sm text-brand-text leading-tight">Más días, menos pagas</p><p class="text-xs text-brand-textMuted mt-0.5">Descuento por frecuencia</p></div>
+</div>
+<div class="flex items-center gap-3 bg-white rounded-2xl border border-orange-100 shadow-sm px-4 py-3">
+<div class="w-11 h-11 shrink-0 rounded-full bg-orange-100 flex items-center justify-center text-xl">🍽️</div>
+<div><p class="font-bold text-sm text-brand-text leading-tight">Almuerzo, cena o ambos</p><p class="text-xs text-brand-textMuted mt-0.5">El servicio que necesites</p></div>
+</div>
+</div>
 <!-- Primary CTA -->
 <div class="pt-4 flex flex-col items-start gap-3">
 <a class="inline-flex items-center justify-center px-10 py-4 text-lg font-bold text-white bg-brand-orange hover:bg-orange-700 transition-colors duration-300 rounded-full shadow-lg hover:shadow-xl w-full sm:w-auto" href="#download">
@@ -197,7 +213,7 @@
 <!-- Phone Mockup Container -->
 <div class="relative w-full max-w-[320px] sm:max-w-[360px]">
 <!-- App Screen Image with natural phone frame from DataStore -->
-<img alt="App Interface" class="w-full h-auto drop-shadow-2xl rounded-[3rem]" src="https://lh3.googleusercontent.com/aida/ADBb0uiYotYbbcZ26VTMCbHGLcLp7hMKKand6JY423F1eTeG1J9WakNj1y7PAIMPrCAZdKZejy_zGOceoEK2ddVet0OzA7J4l6AeBtpvTbjlLcsJ_zC0BC_fDRXMe99uz7aGGviTaMUL70EkC7X3qCYSHWEcDBxdYMKfXpcnl8rBPKcFnTmO9RLbCDoj-LLAY4rxx6bepDLfY79Gu17dnnPNm0Y5bJz7XSOGKNR5lNrB7WXKrx2CTqvOfVVGj_c8SpkVJ5rkbD-u472BH9A"/>
+<img alt="App Interface" class="w-full h-auto drop-shadow-2xl rounded-[3rem]" src="./assets/img/app-explorar.png">
 <!-- Floating Glass Card -->
 <div class="absolute -left-12 sm:-left-24 top-1/2 transform -translate-y-1/2 z-20 w-64 glass-effect p-5 rounded-3xl shadow-glass">
 <div class="flex items-center gap-3 mb-3">
@@ -262,7 +278,7 @@
 <p class="font-semibold text-brand-text mb-1">Zanpo · Como en casa</p>
 <p>© 2026 Todos los derechos reservados</p>
 <p class="mt-2">
-          CIF: [COMPLETAR] | Domicilio: [COMPLETAR], Algeciras (Cádiz)<br/>
+          CIF: [COMPLETAR] | Domicilio: [COMPLETAR], Algeciras (Cádiz)<br>
           Email: <a class="text-brand-orange hover:underline" href="mailto:hola@zanpo.app">hola@zanpo.app</a>
 </p>
 </div>
