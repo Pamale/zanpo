@@ -103,227 +103,181 @@
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col font-sans overflow-x-hidden selection:bg-brand-orange selection:text-white">
-<!-- BEGIN: Cookie Consent Banner -->
-<div class="cookie-banner fixed bottom-0 left-0 right-0 z-40 bg-white border-t-2 border-brand-orange shadow-lg" id="cookie-banner">
-<div class="max-w-7xl mx-auto px-8 lg:px-16 py-4">
-<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-<div class="flex-1">
-<p class="text-sm text-brand-text font-medium">
-          Usamos cookies para mejorar tu experiencia. 
-          <a class="underline text-brand-orange hover:text-orange-700 font-semibold" href="#">Más información</a>
-</p>
-</div>
-<div class="flex gap-3 w-full sm:w-auto">
-<button class="flex-1 sm:flex-none px-4 py-2 text-sm font-semibold text-brand-text border border-brand-surfaceDim rounded-lg hover:bg-gray-50 transition-colors" id="reject-cookies">
-          Rechazar
-        </button>
-<button class="flex-1 sm:flex-none px-6 py-2 text-sm font-semibold text-white bg-brand-orange rounded-lg hover:bg-orange-700 transition-colors" id="accept-cookies">
-          Aceptar
-        </button>
-</div>
-</div>
-</div>
-</div>
-<!-- END: Cookie Consent Banner -->
-<!-- BEGIN: MainHeader -->
-<header class="w-full bg-transparent relative z-50 pt-10 pb-2"><div class="max-w-7xl mx-auto px-8 lg:px-16 flex items-end w-full relative justify-center">
-<!-- Logo & Slogan -->
-<div class="w-full flex flex-col items-center text-center">
-<a class="block" href="/"><img alt="Zanpo" class="w-64 md:w-80 h-auto mx-auto" src="./assets/img/logo-sharp.png"></a>
-<span class="text-brand-green font-black uppercase block text-2xl md:text-4xl mt-1" style="letter-spacing:0.14em;">como en casa</span>
-<div class="relative w-full max-w-6xl mt-6 mb-12">
-<img alt="Comida casera en la mesa" class="w-full h-48 md:h-64 object-cover rounded-3xl" src="./assets/img/header-food.jpg" style="-webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent); mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent); object-position: center center;">
-<div class="absolute inset-x-0 -bottom-9 flex flex-wrap justify-center gap-2 md:gap-3 px-4">
-<div class="bg-white/95 backdrop-blur rounded-2xl shadow-xl px-5 py-3.5 md:px-7 md:py-4 flex items-center gap-3 border-2 border-orange-100"><span class="text-2xl md:text-3xl">🍲</span><span class="text-base md:text-lg font-extrabold text-gray-800">Olvídate de cocinar</span></div>
-<div class="bg-white/95 backdrop-blur rounded-2xl shadow-xl px-5 py-3.5 md:px-7 md:py-4 flex items-center gap-3 border-2 border-orange-100"><span class="text-2xl md:text-3xl">🥗</span><span class="text-base md:text-lg font-extrabold text-gray-800">Come sano y casero</span></div>
-<div class="bg-white/95 backdrop-blur rounded-2xl shadow-xl px-5 py-3.5 md:px-7 md:py-4 flex items-center gap-3 border-2 border-orange-100"><span class="text-2xl md:text-3xl">💰</span><span class="text-base md:text-lg font-extrabold text-gray-800">Ahorra en compras</span></div>
-<div class="bg-white/95 backdrop-blur rounded-2xl shadow-xl px-5 py-3.5 md:px-7 md:py-4 flex items-center gap-3 border-2 border-orange-100"><span class="text-2xl md:text-3xl">🍽️</span><span class="text-base md:text-lg font-extrabold text-gray-800">Elige qué comer cada día</span></div>
-<div class="bg-white/95 backdrop-blur rounded-2xl shadow-xl px-5 py-3.5 md:px-7 md:py-4 flex items-center gap-3 border-2 border-orange-100"><span class="text-2xl md:text-3xl">⏰</span><span class="text-base md:text-lg font-extrabold text-gray-800">Tu comida, a tu hora</span></div>
-</div>
-</div>
-</div>
-</div></header>
-<!-- END: MainHeader -->
-<!-- BEGIN: HeroSection -->
-<main class="flex-grow flex items-center justify-center px-8 lg:px-16 py-4">
-<div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-<!-- Left Content (Text & Cards) -->
-<section class="flex flex-col space-y-10 z-10" data-purpose="hero-content">
-<div class="space-y-6">
-<h1 class="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-brand-text leading-[1.15] tracking-tight text-balance">
-            Suscripción mensual de <span class="text-brand-green">platos</span> en restaurantes de tu zona
-</h1>
-<p class="text-xl text-brand-textMuted leading-relaxed max-w-xl">
-            Elige una suscripción o más para todos los días de la semana a tu gusto sin conformarte con un solo restaurante.
-          </p>
-</div>
-<!-- Options Cards -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<!-- Delivery Card -->
-<div class="bg-white p-6 rounded-3xl shadow-soft border border-brand-surfaceDim flex flex-col items-start gap-4 hover:-translate-y-1 transition-transform duration-300">
-<div class="w-12 h-12 rounded-2xl bg-brand-orangeLight text-brand-orange flex items-center justify-center text-xl">
-<i class="fa-solid fa-motorcycle"></i>
-</div>
-<div>
-<h3 class="font-bold text-lg text-brand-text">Pedidos a domicilio</h3>
-<p class="text-sm text-brand-textMuted mt-1">Recíbelo en casa o en la oficina</p>
-</div>
-</div>
-<!-- Pickup Card -->
-<div class="bg-white p-6 rounded-3xl shadow-soft border border-brand-surfaceDim flex flex-col items-start gap-4 hover:-translate-y-1 transition-transform duration-300">
-<div class="w-12 h-12 rounded-2xl bg-[#f0f4ea] text-brand-green flex items-center justify-center text-xl">
-<i class="fa-solid fa-bag-shopping"></i>
-</div>
-<div>
-<h3 class="font-bold text-lg text-brand-text">Recoger en local</h3>
-<p class="text-sm text-brand-textMuted mt-1">Pasa a buscarlo sin esperas</p>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
-<div class="flex items-center gap-3 bg-white rounded-2xl border border-orange-100 shadow-sm px-4 py-3">
-<div class="w-11 h-11 shrink-0 rounded-full bg-orange-100 flex items-center justify-center text-xl">📅</div>
-<div><p class="font-bold text-sm text-brand-text leading-tight">Elige días y hora</p><p class="text-xs text-brand-textMuted mt-0.5">Tú marcas el horario</p></div>
-</div>
-<div class="flex items-center gap-3 bg-white rounded-2xl border border-orange-100 shadow-sm px-4 py-3">
-<div class="w-11 h-11 shrink-0 rounded-full bg-orange-100 flex items-center justify-center text-xl">💶</div>
-<div><p class="font-bold text-sm text-brand-text leading-tight">Más días, menos pagas</p><p class="text-xs text-brand-textMuted mt-0.5">Descuento por frecuencia</p></div>
-</div>
-<div class="flex items-center gap-3 bg-white rounded-2xl border border-orange-100 shadow-sm px-4 py-3">
-<div class="w-11 h-11 shrink-0 rounded-full bg-orange-100 flex items-center justify-center text-xl">🍽️</div>
-<div><p class="font-bold text-sm text-brand-text leading-tight">Almuerzo, cena o ambos</p><p class="text-xs text-brand-textMuted mt-0.5">El servicio que necesites</p></div>
-</div>
-</div>
-<!-- Primary CTA -->
-<div class="pt-4 flex flex-col items-start gap-3">
-<a class="inline-flex items-center justify-center px-10 py-4 text-lg font-bold text-white bg-brand-orange hover:bg-orange-700 transition-colors duration-300 rounded-full shadow-lg hover:shadow-xl w-full sm:w-auto" href="#download">
-            Descargar la App
-            <i class="fa-solid fa-arrow-right ml-2"></i>
-</a>
-<a class="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-brand-green border-2 border-brand-green hover:bg-brand-green hover:text-white transition-colors duration-300 rounded-full w-full sm:w-auto" href="/app/">
-            ¿Tienes un restaurante? Únete aquí
-</a>
-</div>
+<body class="min-h-screen font-sans overflow-x-hidden selection:bg-brand-orange selection:text-white">
+
+<!-- NAV -->
+<header class="sticky top-0 z-40 glass-effect">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+    <a href="#" class="flex items-center"><img src="./assets/img/logo-sharp.png" alt="zanpo." class="h-9 w-auto"></a>
+    <div class="hidden items-center gap-8 md:flex text-sm font-semibold text-brand-textMuted">
+      <a href="#por-que" class="hover:text-brand-orange transition-colors">Por qué Zanpo</a>
+      <a href="#como-funciona" class="hover:text-brand-orange transition-colors">Cómo funciona</a>
+      <a href="#platos" class="hover:text-brand-orange transition-colors">Platos</a>
+      <a href="#restaurantes" class="hover:text-brand-orange transition-colors">Restaurantes</a>
+    </div>
+    <a href="#descargar" class="btn-primary text-sm" style="padding:.6rem 1.25rem">Descargar</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-brand-orange/20 blur-3xl"></div>
+  <div class="absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-brand-green/10 blur-3xl"></div>
+  <div class="relative mx-auto grid max-w-7xl gap-12 px-6 py-14 md:py-20 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+    <div class="text-center lg:text-left">
+      <div class="flex justify-center lg:justify-start"><img src="./assets/img/logo-sharp.png" alt="zanpo." class="h-20 md:h-28 w-auto"></div>
+      <h1 class="mt-4 text-5xl md:text-6xl font-black text-brand-green tracking-tight">Como en casa</h1>
+      <p class="mt-5 mx-auto lg:mx-0 max-w-xl text-lg md:text-xl text-brand-textMuted">Suscripción mensual de platos en restaurantes de tu zona. Elige una suscripción o más para todos los días de la semana a tu gusto, sin conformarte con un solo restaurante.</p>
+      <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-3">
+        <a href="#descargar" class="btn-primary">Descargar la App <i class="fa-solid fa-arrow-right text-sm"></i></a>
+        <a href="#restaurantes" class="btn-outline"><i class="fa-solid fa-store text-sm"></i> ¿Tienes un restaurante?</a>
+      </div>
+      <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-2.5 max-w-2xl mx-auto lg:mx-0">
+        <div class="flex items-center gap-2 rounded-2xl bg-white px-3 py-2.5 shadow-soft"><span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand-orangeLight text-brand-orange"><i class="fa-solid fa-utensils text-sm"></i></span><span class="text-xs font-bold text-brand-text leading-tight">Olvídate de cocinar</span></div>
+        <div class="flex items-center gap-2 rounded-2xl bg-white px-3 py-2.5 shadow-soft"><span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand-orangeLight text-brand-orange"><i class="fa-solid fa-leaf text-sm"></i></span><span class="text-xs font-bold text-brand-text leading-tight">Come sano y casero</span></div>
+        <div class="flex items-center gap-2 rounded-2xl bg-white px-3 py-2.5 shadow-soft"><span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand-orangeLight text-brand-orange"><i class="fa-solid fa-piggy-bank text-sm"></i></span><span class="text-xs font-bold text-brand-text leading-tight">Ahorra en compras</span></div>
+        <div class="flex items-center gap-2 rounded-2xl bg-white px-3 py-2.5 shadow-soft"><span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand-orangeLight text-brand-orange"><i class="fa-solid fa-calendar-check text-sm"></i></span><span class="text-xs font-bold text-brand-text leading-tight">Elige qué comer cada día</span></div>
+        <div class="flex items-center gap-2 rounded-2xl bg-white px-3 py-2.5 shadow-soft"><span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand-orangeLight text-brand-orange"><i class="fa-solid fa-clock text-sm"></i></span><span class="text-xs font-bold text-brand-text leading-tight">Tu comida, a tu hora</span></div>
+      </div>
+    </div>
+    <div class="relative mx-auto w-full max-w-sm">
+      <div class="absolute -inset-6 rounded-4xl bg-gradient-to-tr from-brand-orange/25 via-brand-orangeLight to-brand-green/20 blur-2xl"></div>
+      <img src="./assets/img/app-explorar.png" alt="App Zanpo mostrando restaurantes cerca de ti" class="relative w-full h-auto drop-shadow-2xl rounded-3xl">
+    </div>
+  </div>
 </section>
-<!-- Right Content (Visual Mockup) -->
-<section class="relative w-full max-w-[500px] mx-auto lg:max-w-none flex justify-center items-center" data-purpose="hero-visual">
-<!-- Background Blob/Shape (Optional subtle background) -->
-<div class="absolute inset-0 bg-brand-orangeLight rounded-full blur-3xl opacity-50 -z-10 transform scale-110 translate-x-10 translate-y-10"></div>
-<!-- Phone Mockup Container -->
-<div class="relative w-full max-w-[320px] sm:max-w-[360px]">
-<!-- App Screen Image with natural phone frame from DataStore -->
-<img alt="App Interface" class="w-full h-auto drop-shadow-2xl rounded-[3rem]" src="./assets/img/app-explorar.png">
-<!-- Floating Glass Card -->
-<div class="absolute -left-12 sm:-left-24 top-1/2 transform -translate-y-1/2 z-20 w-64 glass-effect p-5 rounded-3xl shadow-glass">
-<div class="flex items-center gap-3 mb-3">
-<span class="bg-brand-orange text-white text-xs font-bold px-2 py-1 rounded-md uppercase tracking-wider">Menú del día</span>
-</div>
-<h4 class="font-bold text-gray-900 text-lg mb-1">Chef's Special</h4>
-<p class="text-sm text-gray-600 line-clamp-2">Salmón a la parrilla con guarnición de verduras de temporada y arroz basmati.</p>
-</div>
-</div>
+
+<!-- PILARES -->
+<section id="por-que" class="bg-white/60 py-20">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="text-sm font-black uppercase tracking-widest text-brand-orange">Por qué Zanpo</span>
+      <h2 class="mt-3 text-4xl md:text-5xl font-black leading-tight text-brand-green">La forma más fácil de comer bien.</h2>
+      <p class="mt-4 text-brand-textMuted">Cuatro razones para dejar de pensar en la comida y empezar a disfrutarla.</p>
+    </div>
+    <div class="mt-14 space-y-16 md:space-y-24">
+      <div class="grid gap-8 md:gap-12 lg:grid-cols-2 lg:items-center">
+        <div class="relative"><div class="absolute -inset-3 rounded-4xl bg-brand-orange/10 blur-xl"></div><div class="relative overflow-hidden rounded-4xl shadow-soft"><img src="./assets/img/weekly-plan.jpg" alt="" class="h-[320px] md:h-[420px] w-full object-cover"></div><div class="absolute -bottom-5 left-6 grid h-14 w-14 place-items-center rounded-2xl bg-white shadow-soft text-brand-orange"><i class="fa-solid fa-wallet text-xl"></i></div></div>
+        <div><span class="inline-block rounded-full bg-brand-orangeLight px-3 py-1 text-xs font-black uppercase tracking-wide text-brand-orange">01 · Cuota fija mensual</span><h3 class="mt-4 text-3xl md:text-4xl font-black leading-tight">Por fin sabrás <span class="text-brand-orange">qué pagas</span></h3><p class="mt-4 text-lg text-brand-textMuted">Una tarifa clara, sin sorpresas al final del mes. Presupuesto controlado y comidas garantizadas.</p></div>
+      </div>
+      <div class="grid gap-8 md:gap-12 lg:grid-cols-2 lg:items-center lg:[&>*:first-child]:order-2">
+        <div class="relative"><div class="absolute -inset-3 rounded-4xl bg-brand-orange/10 blur-xl"></div><div class="relative overflow-hidden rounded-4xl shadow-soft"><img src="./assets/img/grocery-savings.jpg" alt="" class="h-[320px] md:h-[420px] w-full object-cover"></div><div class="absolute -bottom-5 left-6 grid h-14 w-14 place-items-center rounded-2xl bg-white shadow-soft text-brand-orange"><i class="fa-solid fa-cart-shopping text-xl"></i></div></div>
+        <div><span class="inline-block rounded-full bg-brand-orangeLight px-3 py-1 text-xs font-black uppercase tracking-wide text-brand-orange">02 · Adiós al supermercado</span><h3 class="mt-4 text-3xl md:text-4xl font-black leading-tight">Olvídate de compras <span class="text-brand-orange">en supermercados</span></h3><p class="mt-4 text-lg text-brand-textMuted">Nada de carritos llenos, colas, ni productos que caducan en la nevera. Zanpo se encarga del resto.</p></div>
+      </div>
+      <div class="grid gap-8 md:gap-12 lg:grid-cols-2 lg:items-center">
+        <div class="relative"><div class="absolute -inset-3 rounded-4xl bg-brand-orange/10 blur-xl"></div><div class="relative overflow-hidden rounded-4xl shadow-soft"><img src="./assets/img/restaurant-warm.jpg" alt="" class="h-[320px] md:h-[420px] w-full object-cover"></div><div class="absolute -bottom-5 left-6 grid h-14 w-14 place-items-center rounded-2xl bg-white shadow-soft text-brand-orange"><i class="fa-solid fa-location-dot text-xl"></i></div></div>
+        <div><span class="inline-block rounded-full bg-brand-orangeLight px-3 py-1 text-xs font-black uppercase tracking-wide text-brand-orange">03 · Variedad de tu barrio</span><h3 class="mt-4 text-3xl md:text-4xl font-black leading-tight">Elige varios restaurantes y ten <span class="text-brand-orange">tu dieta</span></h3><p class="mt-4 text-lg text-brand-textMuted">Combina cocinas, cambia de plato cada día y come equilibrado con restaurantes verificados cerca de ti.</p></div>
+      </div>
+      <div class="grid gap-8 md:gap-12 lg:grid-cols-2 lg:items-center lg:[&>*:first-child]:order-2">
+        <div class="relative"><div class="absolute -inset-3 rounded-4xl bg-brand-orange/10 blur-xl"></div><div class="relative overflow-hidden rounded-4xl shadow-soft"><img src="./assets/img/table-spread.jpg" alt="" class="h-[320px] md:h-[420px] w-full object-cover"></div><div class="absolute -bottom-5 left-6 grid h-14 w-14 place-items-center rounded-2xl bg-white shadow-soft text-brand-orange"><i class="fa-solid fa-hand-holding-heart text-xl"></i></div></div>
+        <div><span class="inline-block rounded-full bg-brand-orangeLight px-3 py-1 text-xs font-black uppercase tracking-wide text-brand-orange">04 · Cero preocupaciones</span><h3 class="mt-4 text-3xl md:text-4xl font-black leading-tight">Nada de pensar <span class="text-brand-orange">qué comerás</span></h3><p class="mt-4 text-lg text-brand-textMuted">Tu menú semanal ya está pensado. Sólo abres la app, eliges y comes. Sencillo, como en casa.</p></div>
+      </div>
+    </div>
+  </div>
 </section>
-</div>
-</main>
-<!-- END: HeroSection -->
-<!-- BEGIN: Footer Legal -->
-<footer class="footer-legal w-full mt-20">
-<div class="max-w-7xl mx-auto px-8 lg:px-16 py-12">
-<!-- Main Footer Content -->
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-gray-300">
-<!-- Column 1: Zanpo Info -->
-<div>
-<h4 class="font-bold text-brand-text mb-4 text-sm uppercase tracking-wide">Sobre Zanpo</h4>
-<ul class="space-y-2 text-sm text-brand-textMuted">
-<li><a class="footer-link hover:text-brand-orange" href="#">Quiénes somos</a></li>
-<li><a class="footer-link hover:text-brand-orange" href="#">Blog</a></li>
-<li><a class="footer-link hover:text-brand-orange" href="#">Contacto</a></li>
-<li><a class="footer-link hover:text-brand-orange" href="#">Preguntas frecuentes</a></li>
-</ul>
-</div>
-<!-- Column 2: Para Restaurantes -->
-<div>
-<h4 class="font-bold text-brand-text mb-4 text-sm uppercase tracking-wide">Para Restaurantes</h4>
-<ul class="space-y-2 text-sm text-brand-textMuted">
-<li><a class="footer-link hover:text-brand-orange" href="#">¿Por qué Zanpo?</a></li>
-<li><a class="footer-link hover:text-brand-orange" href="/app/">Únete a la plataforma</a></li>
-<li><a class="footer-link hover:text-brand-orange" href="#">Términos para restaurantes</a></li>
-</ul>
-</div>
-<!-- Column 3: Seguridad & Soporte -->
-<div>
-<h4 class="font-bold text-brand-text mb-4 text-sm uppercase tracking-wide">Security</h4>
-<ul class="space-y-2 text-sm text-brand-textMuted">
-<li><a class="footer-link hover:text-brand-orange" href="#">Política de Privacidad</a></li>
-<li><a class="footer-link hover:text-brand-orange" href="#">Medidas de Seguridad</a></li>
-<li><a class="footer-link hover:text-brand-orange" href="https://ec.europa.eu/consumers/odr" target="_blank">Resolver litigios (ODR)</a></li>
-<li><a class="footer-link hover:text-brand-orange" href="#">Accesibilidad</a></li>
-</ul>
-</div>
-<!-- Column 4: Legal -->
-<div>
-<h4 class="font-bold text-brand-text mb-4 text-sm uppercase tracking-wide">Legal</h4>
-<ul class="space-y-2 text-sm text-brand-textMuted">
-<li><a class="footer-link hover:text-brand-orange" href="#">Aviso Legal</a></li>
-<li><a class="footer-link hover:text-brand-orange" href="#">Términos de Clientes</a></li>
-<li><a class="footer-link hover:text-brand-orange" href="#">Política de Cookies</a></li>
-<li><a class="footer-link hover:text-brand-orange" href="#">Devoluciones</a></li>
-</ul>
-</div>
-</div>
-<!-- Bottom Footer -->
-<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 text-xs text-brand-textMuted">
-<div>
-<p class="font-semibold text-brand-text mb-1">Zanpo · Como en casa</p>
-<p>© 2026 Todos los derechos reservados</p>
-<p class="mt-2">
-          CIF: [COMPLETAR] | Domicilio: [COMPLETAR], Algeciras (Cádiz)<br>
-          Email: <a class="text-brand-orange hover:underline" href="mailto:hola@zanpo.app">hola@zanpo.app</a>
-</p>
-</div>
-<div class="flex gap-6">
-<a class="hover:text-brand-orange transition-colors" href="#" title="Instagram">
-<i class="fa-brands fa-instagram text-lg"></i>
-</a>
-<a class="hover:text-brand-orange transition-colors" href="#" title="TikTok">
-<i class="fa-brands fa-tiktok text-lg"></i>
-</a>
-<a class="hover:text-brand-orange transition-colors" href="#" title="Twitter">
-<i class="fa-brands fa-twitter text-lg"></i>
-</a>
-</div>
-</div>
-</div>
+
+<!-- ENTREGA -->
+<section class="mx-auto max-w-7xl px-6 py-20">
+  <div class="grid gap-4 md:grid-cols-2">
+    <div class="group relative overflow-hidden rounded-3xl bg-white p-8 shadow-soft transition-transform hover:-translate-y-1"><div class="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-brand-orangeLight transition-transform group-hover:scale-125"></div><div class="relative flex items-start gap-5"><span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-brand-orange text-white"><i class="fa-solid fa-bicycle text-xl"></i></span><div><h3 class="text-2xl font-black">Pedidos a domicilio</h3><p class="mt-2 text-brand-textMuted">Recíbelo en casa o en la oficina.</p></div></div></div>
+    <div class="group relative overflow-hidden rounded-3xl bg-white p-8 shadow-soft transition-transform hover:-translate-y-1"><div class="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-brand-orangeLight transition-transform group-hover:scale-125"></div><div class="relative flex items-start gap-5"><span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-brand-orange text-white"><i class="fa-solid fa-bag-shopping text-xl"></i></span><div><h3 class="text-2xl font-black">Recoger en local</h3><p class="mt-2 text-brand-textMuted">Pasa a buscarlo sin esperas.</p></div></div></div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="como-funciona" class="bg-brand-orangeLight/60 py-20">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="text-sm font-black uppercase tracking-widest text-brand-orange">Cómo funciona</span>
+      <h2 class="mt-3 text-4xl md:text-5xl font-black leading-tight text-brand-green">Tres pasos y a comer.</h2>
+    </div>
+    <div class="mt-14 grid gap-6 md:grid-cols-3">
+      <div class="relative rounded-3xl bg-white p-8 shadow-soft"><span class="absolute -top-4 right-6 rounded-full bg-brand-orange px-3 py-1 text-xs font-black text-white">01</span><span class="grid h-14 w-14 place-items-center rounded-2xl bg-brand-green/10 text-brand-green"><i class="fa-solid fa-calendar-days text-xl"></i></span><h3 class="mt-5 text-xl font-black">Elige días y hora</h3><p class="mt-2 text-brand-textMuted">Tú marcas el horario.</p></div>
+      <div class="relative rounded-3xl bg-white p-8 shadow-soft"><span class="absolute -top-4 right-6 rounded-full bg-brand-orange px-3 py-1 text-xs font-black text-white">02</span><span class="grid h-14 w-14 place-items-center rounded-2xl bg-brand-green/10 text-brand-green"><i class="fa-solid fa-percent text-xl"></i></span><h3 class="mt-5 text-xl font-black">Más días, menos pagas</h3><p class="mt-2 text-brand-textMuted">Descuento por frecuencia.</p></div>
+      <div class="relative rounded-3xl bg-white p-8 shadow-soft"><span class="absolute -top-4 right-6 rounded-full bg-brand-orange px-3 py-1 text-xs font-black text-white">03</span><span class="grid h-14 w-14 place-items-center rounded-2xl bg-brand-green/10 text-brand-green"><i class="fa-solid fa-sun text-xl"></i></span><h3 class="mt-5 text-xl font-black">Almuerzo, cena o ambos</h3><p class="mt-2 text-brand-textMuted">El servicio que necesites.</p></div>
+    </div>
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-3">
+      <span class="text-sm font-semibold text-brand-textMuted">Elige servicio:</span>
+      <div class="inline-flex rounded-full bg-white p-1 shadow-soft">
+        <button class="inline-flex items-center gap-2 rounded-full bg-brand-orange px-5 py-2 text-sm font-bold text-white"><i class="fa-solid fa-sun"></i> Almuerzo</button>
+        <button class="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-bold text-brand-textMuted hover:text-brand-orange"><i class="fa-solid fa-moon"></i> Cena</button>
+        <button class="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-bold text-brand-textMuted hover:text-brand-orange">Ambos</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATOS -->
+<section id="platos" class="mx-auto max-w-7xl px-6 py-20">
+  <div class="flex flex-wrap items-end justify-between gap-6">
+    <div><span class="text-sm font-black uppercase tracking-widest text-brand-orange">Menú del día</span><h2 class="mt-3 text-4xl md:text-5xl font-black leading-tight text-brand-green">Platos que hoy están cocinando.</h2></div>
+    <a href="#descargar" class="text-sm font-bold text-brand-orange hover:underline">Ver todos los platos →</a>
+  </div>
+  <div class="mt-12 grid gap-6 md:grid-cols-3">
+    <article class="group overflow-hidden rounded-3xl bg-white shadow-soft transition-transform hover:-translate-y-1"><div class="relative aspect-[4/3] overflow-hidden"><img src="./assets/img/dish-salmon.jpg" alt="Salmón a la parrilla" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"><span class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-brand-orange backdrop-blur">Especial del chef</span></div><div class="p-6"><h3 class="text-xl font-black">Salmón a la parrilla</h3><p class="mt-2 text-sm text-brand-textMuted">Con guarnición de verduras de temporada y arroz basmati.</p></div></article>
+    <article class="group overflow-hidden rounded-3xl bg-white shadow-soft transition-transform hover:-translate-y-1"><div class="relative aspect-[4/3] overflow-hidden"><img src="./assets/img/dish-bowl.jpg" alt="Bowl de cereales y verduras" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"><span class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-brand-orange backdrop-blur">Menú saludable</span></div><div class="p-6"><h3 class="text-xl font-black">Bowl de cereales y verduras</h3><p class="mt-2 text-sm text-brand-textMuted">Grano integral, verduras asadas y hojas frescas del huerto.</p></div></article>
+    <article class="group overflow-hidden rounded-3xl bg-white shadow-soft transition-transform hover:-translate-y-1"><div class="relative aspect-[4/3] overflow-hidden"><img src="./assets/img/dish-paella.jpg" alt="Paella de la casa" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"><span class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-brand-orange backdrop-blur">Tradicional</span></div><div class="p-6"><h3 class="text-xl font-black">Paella de la casa</h3><p class="mt-2 text-sm text-brand-textMuted">Arroz cocinado a fuego lento con verduras y mariscos.</p></div></article>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="descargar" class="mx-auto max-w-7xl px-6 pb-20">
+  <div class="relative overflow-hidden rounded-4xl bg-brand-green p-10 md:p-16">
+    <div class="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-brand-orange/40 blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-16 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
+    <div class="relative grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+      <div class="text-white">
+        <h2 class="text-4xl md:text-5xl font-black leading-tight">Empieza a comer <span class="text-brand-orange">como en casa</span> hoy mismo.</h2>
+        <p class="mt-4 max-w-lg text-white/85 text-lg">Descárgate la app y elige tu primera suscripción en menos de dos minutos.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#" class="inline-flex items-center gap-3 rounded-2xl bg-black px-5 py-3 text-white hover:bg-black/80 transition"><i class="fa-brands fa-apple text-2xl"></i><span class="text-left leading-tight"><span class="block text-[10px] uppercase opacity-80">Descarga en</span><span class="block text-sm font-bold">App Store</span></span></a>
+          <a href="#" class="inline-flex items-center gap-3 rounded-2xl bg-black px-5 py-3 text-white hover:bg-black/80 transition"><i class="fa-brands fa-google-play text-2xl"></i><span class="text-left leading-tight"><span class="block text-[10px] uppercase opacity-80">Disponible en</span><span class="block text-sm font-bold">Google Play</span></span></a>
+        </div>
+        <div id="restaurantes" class="mt-10 flex flex-wrap items-center gap-4 rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur"><i class="fa-solid fa-store text-xl text-white shrink-0"></i><p class="text-sm text-white"><strong>¿Tienes un restaurante?</strong> Únete a Zanpo y llena mesas cada día.</p><a href="#" class="ml-auto inline-flex items-center gap-1 rounded-full bg-white px-4 py-2 text-sm font-bold text-brand-green hover:bg-brand-orangeLight transition">Únete <i class="fa-solid fa-arrow-right text-xs"></i></a></div>
+        <ul class="mt-8 grid gap-3 sm:grid-cols-2 max-w-lg">
+          <li class="flex items-center gap-2 text-sm font-semibold text-white/90"><span class="grid h-5 w-5 place-items-center rounded-full bg-brand-orange text-white"><i class="fa-solid fa-check text-[10px]"></i></span>Sin permanencia</li>
+          <li class="flex items-center gap-2 text-sm font-semibold text-white/90"><span class="grid h-5 w-5 place-items-center rounded-full bg-brand-orange text-white"><i class="fa-solid fa-check text-[10px]"></i></span>Cambia de plan cuando quieras</li>
+          <li class="flex items-center gap-2 text-sm font-semibold text-white/90"><span class="grid h-5 w-5 place-items-center rounded-full bg-brand-orange text-white"><i class="fa-solid fa-check text-[10px]"></i></span>Restaurantes verificados</li>
+          <li class="flex items-center gap-2 text-sm font-semibold text-white/90"><span class="grid h-5 w-5 place-items-center rounded-full bg-brand-orange text-white"><i class="fa-solid fa-check text-[10px]"></i></span>Menús equilibrados</li>
+        </ul>
+      </div>
+      <div class="mx-auto w-full max-w-[280px]"><img src="./assets/img/app-mockup.png" alt="App Zanpo" class="w-full h-auto drop-shadow-2xl rounded-3xl"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-brand-orange/10 bg-white/50">
+  <div class="mx-auto max-w-7xl px-6 py-14">
+    <div class="grid gap-10 md:grid-cols-4">
+      <div><img src="./assets/img/logo-sharp.png" alt="zanpo." class="h-10 w-auto"><p class="mt-4 text-sm text-brand-textMuted">Como en casa. Suscripciones a comida casera cerca de ti.</p></div>
+      <div><h4 class="text-sm font-black uppercase tracking-wide">Sobre Zanpo</h4><ul class="mt-4 space-y-2 text-sm text-brand-textMuted"><li><a href="#" class="hover:text-brand-orange transition-colors">Quiénes somos</a></li><li><a href="#" class="hover:text-brand-orange transition-colors">Blog</a></li><li><a href="mailto:hola@zanpo.app" class="hover:text-brand-orange transition-colors">Contacto</a></li><li><a href="#" class="hover:text-brand-orange transition-colors">Preguntas frecuentes</a></li></ul></div>
+      <div><h4 class="text-sm font-black uppercase tracking-wide">Para Restaurantes</h4><ul class="mt-4 space-y-2 text-sm text-brand-textMuted"><li><a href="#" class="hover:text-brand-orange transition-colors">¿Por qué Zanpo?</a></li><li><a href="#" class="hover:text-brand-orange transition-colors">Únete a la plataforma</a></li><li><a href="#" class="hover:text-brand-orange transition-colors">Términos para restaurantes</a></li></ul></div>
+      <div><h4 class="text-sm font-black uppercase tracking-wide">Legal</h4><ul class="mt-4 space-y-2 text-sm text-brand-textMuted"><li><a href="#" class="hover:text-brand-orange transition-colors">Aviso Legal</a></li><li><a href="#" class="hover:text-brand-orange transition-colors">Términos de Clientes</a></li><li><a href="#" class="hover:text-brand-orange transition-colors">Política de Privacidad</a></li><li><a href="#" class="hover:text-brand-orange transition-colors">Política de Cookies</a></li></ul></div>
+    </div>
+    <div class="mt-10 flex flex-col gap-2 border-t border-brand-orange/10 pt-6 text-xs text-brand-textMuted md:flex-row md:items-center md:justify-between">
+      <p>© 2026 Zanpo · Como en casa. Todos los derechos reservados.</p>
+      <p>Algeciras (Cádiz) · <a href="mailto:hola@zanpo.app" class="hover:text-brand-orange">hola@zanpo.app</a></p>
+    </div>
+  </div>
 </footer>
-<!-- END: Footer Legal -->
-<!-- JavaScript: Cookie Management -->
-<script>
-  // Cookie banner logic
-  const cookieBanner = document.getElementById('cookie-banner');
-  const acceptBtn = document.getElementById('accept-cookies');
-  const rejectBtn = document.getElementById('reject-cookies');
-  // Check if user has already made a choice
-  function checkCookieConsent() {
-    const consent = localStorage.getItem('zanpo-cookie-consent');
-    if (consent) {
-      cookieBanner.style.display = 'none';
-    }
-  }
-  // Accept cookies
-  acceptBtn.addEventListener('click', function() {
-    localStorage.setItem('zanpo-cookie-consent', 'accepted');
-    cookieBanner.style.display = 'none';
-    // Aquí irían los scripts de analytics (Google Analytics, etc.)
-    console.log('Cookies aceptadas. Iniciando scripts de tracking...');
-  });
-  // Reject cookies
-  rejectBtn.addEventListener('click', function() {
-    localStorage.setItem('zanpo-cookie-consent', 'rejected');
-    cookieBanner.style.display = 'none';
-    console.log('Cookies rechazadas.');
-  });
-  // Check on page load
-  document.addEventListener('DOMContentLoaded', checkCookieConsent);
-</script>
+
+<!-- Cookie banner -->
+<div class="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-3xl rounded-2xl bg-white p-5 shadow-soft md:flex md:items-center md:gap-6" id="cookie-banner">
+  <p class="text-sm text-brand-textMuted">Usamos cookies para mejorar tu experiencia. <a href="#" class="font-bold text-brand-orange hover:underline">Más información</a></p>
+  <div class="mt-3 flex gap-2 md:mt-0 md:ml-auto">
+    <button onclick="document.getElementById('cookie-banner').remove()" class="rounded-full px-4 py-2 text-sm font-bold text-brand-textMuted hover:text-brand-text">Rechazar</button>
+    <button onclick="document.getElementById('cookie-banner').remove()" class="rounded-full bg-brand-orange px-5 py-2 text-sm font-bold text-white hover:brightness-95">Aceptar</button>
+  </div>
+</div>
+
+<style>
+  .glass-effect{background:rgba(255,255,255,.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.5)}
+  .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.9rem 1.6rem;border-radius:9999px;background:#E8621A;color:#fff;font-weight:700;transition:transform .2s,box-shadow .2s,background .2s;box-shadow:0 20px 60px -20px rgba(232,98,26,.45)}
+  .btn-primary:hover{transform:translateY(-2px);background:#d4571680}
+  .btn-outline{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.9rem 1.6rem;border-radius:9999px;background:transparent;color:#E8621A;font-weight:700;border:2px solid #E8621A;transition:background .2s,color .2s}
+  .btn-outline:hover{background:#E8621A;color:#fff}
+  html{scroll-behavior:smooth}
+</style>
+
 </body></html>
