@@ -1,0 +1,12 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<script>
+// GitHub Pages SPA fallback (Expo Router). Reconstruye la ruta como query
+// y reentra por /app/, donde el router la resuelve en cliente.
+(function(){
+  var base = '/app/';
+  var l = window.location;
+  var i = l.pathname.indexOf(base);
+  var rest = i !== -1 ? l.pathname.slice(i + base.length) : '';
+  l.replace(l.origin + base + '?p=/' + rest + (l.search ? '&' + l.search.slice(1) : '') + l.hash);
+})();
+</script></head><body>Cargando…</body></html>
