@@ -19,7 +19,7 @@ else echo "snippet ya presente"; fi
 if ! grep -q "touch-action" "$P"; then
   python3 -c "
 s=open('$P').read()
-css='<style>img,[role=\"button\"],[data-focusable=\"true\"]{touch-action:pan-y;-webkit-user-drag:none;user-drag:none;-webkit-user-select:none;}</style>'
+css='<style>img,[role=\"button\"],[data-focusable=\"true\"]{touch-action:pan-y!important;-webkit-user-drag:none;user-drag:none;-webkit-user-select:none;-webkit-touch-callout:none;}</style>'
 open('$P','w').write(s.replace('</head>',css+'</head>',1))
 print('fix scroll (touch-action) reinyectado')
 "
