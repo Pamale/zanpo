@@ -101,6 +101,16 @@
     .footer-link:hover {
       color: theme('colors.brand.orange');
     }
+    /* Punto del distintivo de lanzamiento: latido lento, no parpadeo publicitario */
+    @keyframes zanpoPulse {
+      0%   { transform: scale(1);   opacity: .55; }
+      70%  { transform: scale(2.4); opacity: 0; }
+      100% { transform: scale(2.4); opacity: 0; }
+    }
+    .pulse-dot { animation: zanpoPulse 2.4s cubic-bezier(0, 0, .2, 1) infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .pulse-dot { animation: none; opacity: .35; }
+    }
   </style>
 </head>
 <body class="min-h-screen font-sans overflow-x-hidden selection:bg-brand-orange selection:text-white">
@@ -126,12 +136,24 @@
   <div class="relative mx-auto grid max-w-7xl gap-12 px-6 py-14 md:py-20 lg:grid-cols-[1.1fr_1fr] lg:items-center">
     <div class="text-center lg:text-left">
       <div class="flex justify-center lg:justify-start"><img src="./assets/img/logo-sharp.png" alt="zanpo." class="h-20 md:h-28 w-auto"></div>
+      <div class="mt-5 flex justify-center lg:justify-start">
+        <span class="inline-flex items-center gap-2.5 rounded-full border border-brand-orange/25 bg-brand-orangeLight px-4 py-1.5 text-xs font-black uppercase tracking-[0.12em] text-brand-orange">
+          <span class="relative flex h-2 w-2">
+            <span class="pulse-dot absolute inline-flex h-full w-full rounded-full bg-brand-orange opacity-60"></span>
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-brand-orange"></span>
+          </span>
+          Próximo lanzamiento · Campo de Gibraltar
+        </span>
+      </div>
       <h1 class="mt-4 text-5xl md:text-6xl font-black text-brand-green tracking-tight">Como en casa</h1>
       <p class="mt-5 mx-auto lg:mx-0 max-w-xl text-lg md:text-xl text-brand-textMuted">Suscripción mensual de platos en restaurantes de tu zona. Elige una suscripción o más para todos los días de la semana a tu gusto, sin conformarte con un solo restaurante.</p>
       <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-3">
         <a target="_blank" rel="noopener noreferrer" href="./app/" class="btn-primary">Abrir la App <i class="fa-solid fa-arrow-right text-sm"></i></a>
         <a target="_blank" rel="noopener noreferrer" href="./app/?role=restaurante&mode=register" class="btn-outline"><i class="fa-solid fa-store text-sm"></i> ¿Tienes un restaurante?</a>
       </div>
+      <p class="mt-4 mx-auto lg:mx-0 max-w-xl text-sm text-brand-textMuted">
+        Estamos incorporando los primeros restaurantes del Campo de Gibraltar. Ya puedes entrar, crear tu cuenta y ver cómo funciona: las suscripciones se activarán en el lanzamiento.
+      </p>
       <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-2.5 max-w-2xl mx-auto lg:mx-0">
         <div class="flex items-center gap-2 rounded-2xl bg-white px-3 py-2.5 shadow-soft"><span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand-orangeLight text-brand-orange"><i class="fa-solid fa-utensils text-sm"></i></span><span class="text-xs font-bold text-brand-text leading-tight">Olvídate de cocinar</span></div>
         <div class="flex items-center gap-2 rounded-2xl bg-white px-3 py-2.5 shadow-soft"><span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand-orangeLight text-brand-orange"><i class="fa-solid fa-leaf text-sm"></i></span><span class="text-xs font-bold text-brand-text leading-tight">Come sano y casero</span></div>
